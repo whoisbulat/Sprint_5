@@ -1,7 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from locators.locators import locators
-
 class TestLogout:
         def test_successful_logout(self, login):
             driver = login

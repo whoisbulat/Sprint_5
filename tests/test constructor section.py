@@ -11,7 +11,6 @@ class TestConstructorSection:
         assert text == 'Булки'
 
 
-
     def test_constructor_go_to_sauces(self, driver):
         driver.find_element(*locators.CONSTRUCTOR_BTN_SAUCES).click()
         text = WebDriverWait(driver, 5).until(EC.visibility_of_element_located(

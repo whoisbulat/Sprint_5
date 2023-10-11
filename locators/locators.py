@@ -23,7 +23,6 @@ class locators:
     # личный кабинет
     LOGOUT_BTN = (By.XPATH, "//button[contains(text(),'Выход')]") # кнопка 'Выход' в личном кабинете
 
-
     # хедер
     CONSTRUCTOR_BTN = (By.XPATH, "//p[contains(text(),'Конструктор')]")  # кнопка перехода в 'Конструктор'
     LOGIN_BTN = (By.XPATH, "//p[contains(text(),'Личный Кабинет')]") # кнопка "личный кабинет" на главной странице

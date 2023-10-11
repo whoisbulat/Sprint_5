@@ -4,7 +4,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from locators.locators import locators
 faker = Faker()
 
-
 class TestRegistration:
     def test_successful_registration(self, driver):
         email = faker.email()

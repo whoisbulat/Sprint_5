@@ -12,7 +12,6 @@ class TestConstructorTransitionFromPersonalAccount:
         assert text == 'Соберите бургер'
 
 
-
     def test_transition_to_constructor_from_personal_account_by_logo_stellar_burgers(self, driver):
         driver.find_element(*locators.LOGIN_BTN).click()
         driver.find_element(*locators.LOGO_ON_HEADER).click()

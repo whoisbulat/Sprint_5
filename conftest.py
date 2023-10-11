@@ -18,7 +18,6 @@ def driver():
     yield browser
     browser.quit()
 
-
 @pytest.fixture
 def login(driver):
     driver.find_element(*locators.LOGIN_BTN).click()
