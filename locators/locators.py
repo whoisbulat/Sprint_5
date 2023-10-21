@@ -22,6 +22,8 @@ class locators:
 
     # личный кабинет
     LOGOUT_BTN = (By.XPATH, "//button[contains(text(),'Выход')]") # кнопка 'Выход' в личном кабинете
+    TEXT_PROFILE_ON_PAGE_USER_ACCOUNT = (By.XPATH, "//a[contains(text(),'Профиль')]") # текс 'Профиль' в личном кабинете
+
 
     # хедер
     CONSTRUCTOR_BTN = (By.XPATH, "//p[contains(text(),'Конструктор')]")  # кнопка перехода в 'Конструктор'
@@ -35,5 +37,6 @@ class locators:
     CONSTRUCTOR_BTN_SAUCES = (By.XPATH, "//span[contains(text(),'Соусы')]") # раздел Соусы
     CONSTRUCTOR_BTN_FILLING = (By.XPATH, "//span[contains(text(),'Начинки')]") # раздел Начинки
     CONSTRUCTOR_BTN_ACTIVE = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current')]")
+
 
 

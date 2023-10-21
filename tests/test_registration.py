@@ -14,8 +14,10 @@ class TestRegistration:
         driver.find_element(*locators.EMAIL_INPUT).send_keys(email)
         driver.find_element(*locators.PASSWORD_INPUT).send_keys('142543534')
         driver.find_element(*locators.REGISTER_SUBMIT_BTN).click()
-        WebDriverWait(driver, 10).until(EC.url_to_be('https://stellarburgers.nomoreparties.site/login'))
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
+        text = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(
+            (locators.FORGOT_PASSWORD_LINK))).text
+        assert text == 'Восстановить пароль'
+
 
     def test_incorrect_password_error(self, driver):
         email = faker.email()
