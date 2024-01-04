@@ -2,7 +2,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from locators.locators import locators
 
-
 class TestLoginStellarburger:
     def test_login_by_button_sign_in_on_main_page(self, login):
         driver = login

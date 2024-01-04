@@ -1,12 +1,11 @@
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
+from locators.locators import locators
 
 class TestNavigattionPersonalAccount:
         def test_transition_on_page_personal_account(self, login):
             driver = login
-            driver.find_element(By.XPATH, "//p[contains(text(),'Личный Кабинет')]").click()
+            driver.find_element(*locators.LOGIN_BTN).click()
             text = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(
-                (By.XPATH, "//a[contains(text(),'Профиль')]"))).text
+                (locators.TEXT_PROFILE_ON_PAGE_USER_ACCOUNT))).text
             assert text == 'Профиль'

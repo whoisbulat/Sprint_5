@@ -25,5 +25,3 @@
 # Раздел «Конструктор» [test constructor section.py]
 
 
-
-# Sprint_5
