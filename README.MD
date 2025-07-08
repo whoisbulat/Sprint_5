@@ -1,7 +1,5 @@
 # UI Automation Tests for Stellar Burgers
 
-![Stellar Burgers Logo](https://stellarburgers.nomoreparties.site/static/media/logo.8a86c9d5.svg)
-
 End-to-end тестирование веб-приложения Stellar Burgers - сервиса заказа космических бургеров.
 
 ## 🚀 О проекте
